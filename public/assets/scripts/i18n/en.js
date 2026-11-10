@@ -217,6 +217,7 @@ window.i18nDictionary.en = {
     team_role3: "UX/UI Designer",
     team_role4: "Software Architect",
     team_role5: "Product Owner",
+    team_role6: "Software Developer",
     about_team_video_eyebrow: "Video about the team",
     about_team_video_title: "Meet Dymbia",
     about_team_video_subtitle: "Who we are, the roles we took on and how we built SumaqAgro during the course.",
