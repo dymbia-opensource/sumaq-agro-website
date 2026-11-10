@@ -1,6 +1,6 @@
 # SumaqAgro — Landing Page
 
-[![Release](https://img.shields.io/badge/release-v3.1.0-brightgreen.svg)](#versioning-and-workflow)
+[![Release](https://img.shields.io/badge/release-v3.2.0-brightgreen.svg)](#versioning-and-workflow)
 [![Stack](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JavaScript%20vanilla-blue.svg)](#technology-stack)
 [![i18n](https://img.shields.io/badge/i18n-ES%20%7C%20EN-orange.svg)](#technical-features)
 [![Course](https://img.shields.io/badge/UPC-1ASI0729%20Open%20Source-red.svg)](https://www.upc.edu.pe/)
@@ -63,9 +63,9 @@ The landing page follows a conversion journey: **value proposition → problem �
 
 ### Legal Pages
 
-- [Privacy Policy](public/pages/policy.html)
-- [Terms of Service](public/pages/service.html)
-- [Cookie Policy](public/pages/cookie.html)
+- [Privacy Policy](public/policy.html)
+- [Terms of Service](public/service.html)
+- [Cookie Policy](public/cookie.html)
 
 ---
 
@@ -90,8 +90,8 @@ The landing page follows a conversion journey: **value proposition → problem �
 |---|---|
 | Markup | Semantic HTML5 |
 | Styles | CSS3 (`public/assets/styles`) |
-| Logic | Vanilla JavaScript (`public/assets/js/script.js`) |
-| i18n | Translation modules (`public/assets/js/i18n/`) |
+| Logic | Vanilla JavaScript (`public/assets/scripts`) |
+| i18n | Translation modules (`public/assets/scripts`) |
 | Typography | Poppins (headings, Google Fonts) and Inter (body text, self-hosted) |
 | Iconography | Material Symbols Outlined and SVG (`public/assets/images/svg/`) |
 | Project management | Jira, Miro, GitHub |
@@ -178,6 +178,8 @@ sumaqAgro-landing-page/
     - `v1.0.0` — Initial landing page, i18n, SEO, and team.
     - `v1.1.0` — Responsive layout, mobile menu, and legal page fixes.
     - `v3.0.0` — Conversion-oriented redesign (problem, how it works, FAQ, plan selector) and image optimization.
+    - `v3.1.0` — Demo video, testimonial carousel, and impact goals.
+    - `v3.2.0` — Upgrades and bug fixes.
 
 ---
 

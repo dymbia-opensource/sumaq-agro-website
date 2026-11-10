@@ -217,6 +217,7 @@ window.i18nDictionary.es = {
     team_role3: "Diseñador UX/UI",
     team_role4: "Arquitecto de Software",
     team_role5: "Product Owner",
+    team_role6: "Desarrollador de Software",
     about_team_video_eyebrow: "Video sobre el equipo",
     about_team_video_title: "Conoce a Dymbia",
     about_team_video_subtitle: "Quiénes somos, los roles que asumimos y cómo construimos SumaqAgro durante el curso.",
@@ -242,7 +243,7 @@ window.i18nDictionary.es = {
 
     // CTA final
     cta_title: "Empieza a decidir con precisión hoy",
-    cta_desc: "Cuéntanos quién eres y te recomendamos el plan adecuado. Contáctanos para consultar su contratación.",
+    cta_desc: "Elige el plan ideal para ti y suscríbete a SumaqAgro. Cultiva con información y haz crecer tu campo.",
     finder_legend: "Soy…",
     finder_farmer: "Agricultor",
     finder_cooperative: "Cooperativa",

@@ -61,7 +61,7 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   - Cookie Policy (`public/pages`) describing cookie categories and browser management options.
   - Shared branding, footer navigation, and language controls across legal pages.
 - **Internationalization**:
-  - English and Spanish language switching through `data-i18n` attributes and language dictionaries in `public/assets/js/i18n/`.
+  - English and Spanish language switching through `data-i18n` attributes and language dictionaries in `public/assets/scripts`.
   - Language preference persistence using `localStorage`.
   - Dynamic updates to the document language and language button accessibility labels.
   - Billing period translations when changing languages.

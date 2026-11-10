@@ -203,7 +203,7 @@ Use `docs` for changes limited to `README.md`, `CHANGELOG.md`, or `CONTRIBUTING.
 
 ### JavaScript
 
-- Maintain website interactions in `public/assets/js/script.js`.
+- Maintain website interactions in `public/assets/scripts`.
 - Use `const` by default and `let` when reassignment is necessary.
 - Use descriptive `camelCase` names for functions and variables.
 - Keep initialization functions focused on their responsibilities.
