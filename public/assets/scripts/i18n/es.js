@@ -239,7 +239,7 @@ window.i18nDictionary.es = {
     faq5_q: "¿Qué incluye el Plan Semilla?",
     faq5_a: "El Plan Semilla cuesta S/49 al mes o S/490 al año e incluye hasta 4 parcelas registradas, campañas por parcela, consulta de NDVI y NDWI, registro de gastos, jornales y fletes, cálculo de costos y consulta de alertas agroclimáticas.",
     faq6_q: "¿Quién puede ver los datos de mi parcela y mis costos?",
-    faq6_a: 'Solo tú y las personas que invites, como tu cooperativa o tu asesor. No vendemos datos personales. Lee nuestra <a href="public/pages/policy.html" data-legal>Política de Privacidad</a>.',
+    faq6_a: 'Solo tú y las personas que invites, como tu cooperativa o tu asesor. No vendemos datos personales. Lee nuestra <a href="policy.html" data-legal>Política de Privacidad</a>.',
 
     // CTA final
     cta_title: "Empieza a decidir con precisión hoy",
