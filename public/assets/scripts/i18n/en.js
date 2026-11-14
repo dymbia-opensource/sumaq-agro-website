@@ -239,7 +239,7 @@ window.i18nDictionary.en = {
     faq5_q: "What does the Seed Plan include?",
     faq5_a: "The Seed Plan costs S/49 per month or S/490 per year and includes up to 4 registered plots, crop seasons per plot, NDVI and NDWI indices, expense, day-labor and freight records, cost calculations and agroclimatic alerts.",
     faq6_q: "Who can see my plot and cost data?",
-    faq6_a: 'Only you and the people you invite, such as your cooperative or advisor. We do not sell personal data. Read our <a href="public/pages/policy.html" data-legal>Privacy Policy</a>.',
+    faq6_a: 'Only you and the people you invite, such as your cooperative or advisor. We do not sell personal data. Read our <a href="policy.html" data-legal>Privacy Policy</a>.',
 
     // Final CTA
     cta_title: "Start making precise decisions today",
