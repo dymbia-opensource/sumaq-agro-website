@@ -22,41 +22,46 @@ Thank you for contributing to the SumaqAgro landing page! This document defines 
 
 ## Project Structure
 
-The landing page uses HTML, CSS, and JavaScript.
+The landing page is a static site built with HTML, CSS, and vanilla JavaScript. The `public/` directory contains all files served by the site.
 
 ```text
 sumaqAgro-landing-page/
 ├── public/
 │   ├── assets/
-│   │   ├── css/
-│   │   │   └── styles.css
 │   │   ├── fonts/
 │   │   ├── images/
-│   │   └── js/
-│   │       ├── i18n/
-│   │       │   ├── en.js
-│   │       │   └── es.js
-│   │       └── script.js
-│   └── sections/
-│       ├── cookie.html
-│       ├── policy.html
-│       └── service.html
+│   │   │   └── svg/
+│   │   ├── scripts/
+│   │   │   ├── i18n/
+│   │   │   │   ├── en.js
+│   │   │   │   └── es.js
+│   │   │   └── script.js
+│   │   └── styles/
+│   │       └── styles.css
+│   ├── 404.html
+│   ├── _footer.html
+│   ├── _header.html
+│   ├── cookie.html
+│   ├── index.html
+│   ├── policy.html
+│   └── service.html
 ├── .gitignore
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
-├── index.html
-├── package.json
+├── LICENSE.md
 └── README.md
 ```
 
 ### Responsibilities
 
-- `public/index.html`: Main landing page content and structure.
-- `styles.css`: Shared visual styles, layouts, and responsive rules.
-- `script.js`: Navigation, language selection, pricing interactions, and application initialization.
-- `i18n/en.js` and `i18n/es.js`: English and Spanish translation dictionaries.
-- `public/pages`: Privacy Policy, Terms of Service, and Cookie Policy pages.
-- `public/assets/images/`: Images and video assets referenced by the website.
+- `public/index.html` contains the main landing page content.
+- `public/_header.html` and `public/_footer.html` contain the navigation and footer loaded by the landing page.
+- `public/404.html` is the custom not-found page.
+- `public/policy.html`, `public/service.html`, and `public/cookie.html` contain the legal pages.
+- `public/assets/styles/styles.css` contains shared styles, layouts, and responsive rules.
+- `public/assets/scripts/script.js` loads the header and footer and initializes navigation, language selection, and pricing interactions.
+- `public/assets/scripts/i18n/` contains the English and Spanish translation dictionaries.
+- `public/assets/images/` contains photos, logos, screenshots, and SVG illustrations.
 
 ---
 
@@ -76,17 +81,17 @@ git clone https://github.com/dymbia-opensource/sumaqAgro-landing-page.git
 cd sumaqAgro-landing-page
 ```
 
-Open the project in your editor and serve the repository root using a local static server, such as the Live Server extension for Visual Studio Code.
+From the repository root, serve `public/` as the website root. For example, if Python is installed, run:
 
-Serving the repository root ensures that `public/index.html` and the `public/` directory are available together.
+```bash
+python3 -m http.server 8080 --directory public
+```
+
+On Windows, use `py -m http.server 8080 --directory public`. Open `http://localhost:8080/` so the browser can load the header, footer, and legal dialogs over HTTP.
 
 ### Available Scripts
 
-The supplied `package.json` does not declare dependencies or development, build, or lint scripts.
-
-Its current `test` script is a placeholder that exits with an error. It must not be treated as an automated test suite.
-
-Do not document or require commands such as `npm start`, `npm run build`, or `npm run lint` unless those scripts are added to the project.
+The static files are ready to serve directly from `public/`. Local development requires no dependency installation or build step.
 
 ---
 
@@ -218,8 +223,8 @@ Use `docs` for changes limited to `README.md`, `CHANGELOG.md`, or `CONTRIBUTING.
 The website supports English and Spanish through:
 
 ```text
-public/assets/js/i18n/en.js
-public/assets/js/i18n/es.js
+public/assets/scripts/i18n/en.js
+public/assets/scripts/i18n/es.js
 ```
 
 ### Translation Rules
@@ -293,7 +298,7 @@ MAJOR.MINOR.PATCH
 - **MINOR**: Backward-compatible features and capabilities.
 - **PATCH**: Backward-compatible defect corrections.
 
-Update `package.json` and `CHANGELOG.md` together when preparing a release.
+Update `CHANGELOG.md` and the release references in `README.md` when preparing a release.
 
 Record changes under the appropriate changelog categories:
 
@@ -320,8 +325,8 @@ The supplied project configuration does not include an automated test suite. Val
 - Switch between English and Spanish.
 - Reload the page and confirm that the selected language persists.
 - Test monthly and annual pricing in both languages.
-- Verify savings badge interaction using the mouse and keyboard.
-- Open all legal pages and test their navigation and language controls.
+- Verify the header and footer load and their links work.
+- Open the legal dialogs from the landing page and check the standalone legal pages.
 - Confirm that images and videos load correctly.
 - Check keyboard navigation and visible focus states.
 - Inspect the browser console for JavaScript errors.
