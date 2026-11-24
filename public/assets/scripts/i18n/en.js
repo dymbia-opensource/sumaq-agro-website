@@ -180,7 +180,7 @@ window.i18nDictionary.en = {
     plan3_btn: "Choose Technical Advisor Plan",
     plan3_summary: "Organize your visits and provide technical follow-up for each plot.",
     plan3_capacity_note: "Supervised plots belong to the producers you advise.",
-    plans_footnote: "Prices in Peruvian soles (PEN). Choosing a plan prepares an email with the plan, billing period and amount to inquire about signing up.",
+    plans_footnote: "Prices in Peruvian soles (PEN). Choosing a plan takes you to sign in to continue signing up.",
 
     // Impact
     impact_eyebrow: "Real results",
@@ -249,7 +249,7 @@ window.i18nDictionary.en = {
     finder_cooperative: "Cooperative",
     finder_advisor: "Advisor",
     finder_result: "Your plan:",
-    finder_note: "The button prepares an email with your plan and the billing period selected in the plans section.",
+    finder_note: "The button takes you to sign in to subscribe to the plan and billing period selected in the plans section.",
 
     // Footer
     footer_desc: "Satellite monitoring, cost control and quality certification for Peruvian potato and coffee growers. A Dymbia product.",
