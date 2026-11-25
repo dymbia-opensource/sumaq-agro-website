@@ -397,6 +397,9 @@ function initAudienceGallery() {
 /* ---------- Pricing (US-07) ---------- */
 
 // Amounts in céntimos keep the annual charge exactly equal to ten monthly charges.
+// Choosing a plan sends the visitor to the web app's sign-in page.
+const PLAN_LOGIN_URL = 'https://sumaqagro-appweb.web.app/demo-access';
+
 const PLAN_CATALOG = {
     seed: { name: 'plan1_name', monthly: 4900, cta: 'plan1_btn' },
     cooperative: { name: 'plan2_name', monthly: 18900, cta: 'plan2_btn' },
@@ -413,22 +416,9 @@ function getPlanCharge(plan) {
     return plan.monthly * (currentBilling === 'annual' ? 10 : 1);
 }
 
-function getPlanContactUrl(plan) {
-    const planName = currentLang === 'es' && plan.name === 'plan2_name'
-        ? `plan ${t(plan.name)}`
-        : t(plan.name);
-    const message = t('plans_contact_message')
-        .replace('{plan}', planName)
-        .replace('{billing}', t(currentBilling === 'annual' ? 'plans_year' : 'plans_month').toLowerCase())
-        .replace('{price}', formatPlanPrice(getPlanCharge(plan)))
-        .replace('{period}', t(currentBilling === 'annual' ? 'plans_contact_year' : 'plans_contact_month'));
-    return `mailto:contacto@sumaqagro.pe?subject=${encodeURIComponent(t('plans_contact_subject'))}&body=${encodeURIComponent(message)}`;
-}
-
 function updatePlanContacts() {
     document.querySelectorAll('[data-plan-contact]').forEach(link => {
-        const plan = PLAN_CATALOG[link.dataset.planContact];
-        if (plan) link.href = getPlanContactUrl(plan);
+        link.href = PLAN_LOGIN_URL;
     });
 }
 
@@ -468,9 +458,8 @@ function initBilling() {
                 item.setAttribute('aria-pressed', String(isActive));
             });
 
-            // Contact links and the final recommendation change with the selected period immediately.
+            // The final recommendation changes with the selected period immediately.
             updatePlanFinder();
-            updatePlanContacts();
 
             const prices = document.querySelectorAll('.price-val');
             prices.forEach(element => element.classList.add('price-updating'));
@@ -498,7 +487,7 @@ function updatePlanFinder() {
     const contact = form.querySelector('[data-finder-cta]');
     contact.textContent = t(plan.cta);
     contact.dataset.planContact = planId;
-    contact.href = getPlanContactUrl(plan);
+    contact.href = PLAN_LOGIN_URL;
 }
 
 function initPlanFinder() {

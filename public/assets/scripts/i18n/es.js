@@ -180,7 +180,7 @@ window.i18nDictionary.es = {
     plan3_btn: "Elegir Plan Asesor Técnico",
     plan3_summary: "Organiza tus visitas y da seguimiento técnico a cada parcela.",
     plan3_capacity_note: "Las parcelas supervisadas pertenecen a los productores atendidos.",
-    plans_footnote: "Precios en soles (PEN). Al elegir un plan se preparará un correo con el plan, la modalidad y el importe para consultar su contratación.",
+    plans_footnote: "Precios en soles (PEN). Al elegir un plan te llevamos a iniciar sesión para continuar con la contratación.",
 
     // Impacto
     impact_eyebrow: "Resultados reales",
@@ -249,7 +249,7 @@ window.i18nDictionary.es = {
     finder_cooperative: "Cooperativa",
     finder_advisor: "Asesor",
     finder_result: "Tu plan:",
-    finder_note: "El botón prepara un correo con tu plan y la modalidad elegida en la sección de planes.",
+    finder_note: "El botón te lleva a iniciar sesión para contratar el plan y la modalidad elegida en la sección de planes.",
 
     // Footer
     footer_desc: "Monitoreo satelital, control de costos y certificación de calidad para productores peruanos de papa y café. Un producto de Dymbia.",
